@@ -1,8 +1,15 @@
 body {
   
-  background: wheat;
+  background-image: repeating-radial-gradient(#bf7300, #ffbc00);
+  background-repeat: no-repeat;
+  background-size: auto 250%;
 }
+
 
 img {
   margin: auto;
+}
+
+h1 {
+  text-align: center;
 }

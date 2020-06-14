@@ -1,7 +1,5 @@
-INSERT INTO burger (burger_type) VALUES ('Cheese burger');
-INSERT INTO burger (burger_type) VALUES ('Jamon burger');
-INSERT INTO burger (burger_type) VALUES ('Yummy burger');
+INSERT INTO burgers (burger_type) VALUES ('Cheese burger');
+INSERT INTO burgers (burger_type, devoured) VALUES ('Jamon burger', false);
+INSERT INTO burgers (burger_type) VALUES ('Yummy burger');
 
-
-INSERT INTO devoured (eaten, burger_id) VALUES ('fake burger', 1);
 
