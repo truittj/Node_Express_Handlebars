@@ -2,7 +2,8 @@
 $(function() {
   $(".change-devoured").on("click", function(event) {
     var id = $(this).data("id");
-    var newDevoured = $(this).data("newDevoured");
+    var newDevoured = $(this).data("newdevoured");
+    console.log(newDevoured)
 
     var newDevouredState = {
       devoured: newDevoured
@@ -27,6 +28,7 @@ $(function() {
 
     var newBurger = {
       burger_type: $("#quo").val().trim(),
+      devoured: 1
     };
     console.log(newBurger);
     // Send the POST request.
@@ -44,7 +46,7 @@ $(function() {
 
   $(".delete-burger").on("click", function(event) {
     var id = $(this).data("id");
-
+    console.log("delete click + id "+id);
     // Send the DELETE request.
     $.ajax("/api/burger/" + id, {
       type: "DELETE"

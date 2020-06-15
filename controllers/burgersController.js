@@ -30,7 +30,7 @@ router.post("/api/burgers", function(req, res) {
 
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-console.log(consition);
+console.log(condition);
   console.log("condition", condition);
 
   burger.update({
@@ -45,14 +45,15 @@ console.log(consition);
   });
 });
 
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/api/burger/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
+  console.log("Starting Delete Route +id"+condition);
   burger.delete(condition, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
+      console.log("Succesfully delete log")
       res.status(200).end();
     }
   });
