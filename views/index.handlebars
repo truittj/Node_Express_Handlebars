@@ -3,13 +3,13 @@
 <h1>Eat-Da-Burger</h1>
 
 
-<ol style="float:left; margin-left: 10%;">
+<ul style="float:left; margin-left: 10%;">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burger/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ol>
+</ul>
 
 
 <ul style="float:right; margin-right: 10%;">
@@ -20,15 +20,15 @@
   {{/each}}
 </ul>
 
-<h2>Add a burger</h2>
+<div class="container display">
+  <form class="row mx-auto create-form">
 
-<div class="display">
-  <form class="create-form">
-
-  <div class="form-group">
+  <div class="row mx-auto form-group">
     <textarea id="quo" for="ba" name="quote" rows="8" cols="40"></textarea>
   </div>
-  <button type="submit">Add Burger</button>
+  <div class="container">
   <p>Enter a burger you want to Eat. Then click Add Burger Button</p>
+  </div>
+  <button class="row-2 mx-auto submit" type="submit">Add Burger</button>
 </form>
 </div>
