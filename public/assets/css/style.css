@@ -18,7 +18,19 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
 
 .display {
   text-align: center;
+}
+
+li {
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

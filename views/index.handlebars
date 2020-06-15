@@ -3,16 +3,16 @@
 <h1>Eat-Da-Burger</h1>
 
 
-<ul style="float:left, margin-left: 10%">
+<ol style="float:left; margin-left: 10%;">
   {{#each burgers}}
     {{#unless devoured}}
       {{> burger/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
+</ol>
 
 
-<ul style="float:right, margin-left: 10%">
+<ul style="float:right; margin-right: 10%;">
   {{#each burgers}}
     {{#if devoured}}
       {{> burger/burger-devoured devoured=false}}

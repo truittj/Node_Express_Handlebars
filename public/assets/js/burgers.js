@@ -28,7 +28,7 @@ $(function() {
 
     var newBurger = {
       burger_type: $("#quo").val().trim(),
-      devoured: 1
+      devoured: 0
     };
     console.log(newBurger);
     // Send the POST request.
