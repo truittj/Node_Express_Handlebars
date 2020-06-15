@@ -14,7 +14,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed sleep to", newDevoured);
+        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -27,7 +27,6 @@ $(function() {
 
     var newBurger = {
       burger_type: $("#ca").val().trim(),
-      devoured: $("[name=sleepy]:checked").val().trim()
     };
 
     // Send the POST request.
